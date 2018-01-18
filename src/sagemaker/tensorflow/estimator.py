@@ -78,7 +78,7 @@ class Tensorboard(threading.Thread):
 
         for i in range(100):
             p = subprocess.Popen(
-                ["tensorboard", "--logdir", self.logdir, "--host", "localhost", "--port", str(port)],
+                ["tensorboard", "--logdir", self.logdir, "--port", str(port)],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
